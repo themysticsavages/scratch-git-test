@@ -12,7 +12,7 @@
             "lists": {},
             "broadcasts": {},
             "blocks": {
-                "h": {
+                "i": {
                     "opcode": "event_whenflagclicked",
                     "next": "a",
                     "parent": null,
@@ -26,18 +26,18 @@
                 "a": {
                     "opcode": "sound_play",
                     "next": "e",
-                    "parent": "h",
+                    "parent": "i",
                     "inputs": {
                         "SOUND_MENU": [
                             1,
-                            "i"
+                            "j"
                         ]
                     },
                     "fields": {},
                     "shadow": false,
                     "topLevel": false
                 },
-                "i": {
+                "j": {
                     "opcode": "sound_sounds_menu",
                     "next": null,
                     "parent": "a",
@@ -75,7 +75,7 @@
                 },
                 "f": {
                     "opcode": "looks_changeeffectby",
-                    "next": "j",
+                    "next": "k",
                     "parent": "e",
                     "inputs": {
                         "CHANGE": [
@@ -95,7 +95,7 @@
                     "shadow": false,
                     "topLevel": false
                 },
-                "j": {
+                "k": {
                     "opcode": "looks_nextbackdrop",
                     "next": null,
                     "parent": "f",
@@ -104,7 +104,7 @@
                     "shadow": false,
                     "topLevel": false
                 },
-                "k": {
+                "l": {
                     "opcode": "event_whenflagclicked",
                     "next": "b",
                     "parent": null,
@@ -117,19 +117,19 @@
                 },
                 "b": {
                     "opcode": "sound_play",
-                    "next": "l",
-                    "parent": "k",
+                    "next": "m",
+                    "parent": "l",
                     "inputs": {
                         "SOUND_MENU": [
                             1,
-                            "m"
+                            "n"
                         ]
                     },
                     "fields": {},
                     "shadow": false,
                     "topLevel": false
                 },
-                "m": {
+                "n": {
                     "opcode": "sound_sounds_menu",
                     "next": null,
                     "parent": "b",
@@ -143,7 +143,7 @@
                     "shadow": true,
                     "topLevel": false
                 },
-                "l": {
+                "m": {
                     "opcode": "looks_changeeffectby",
                     "next": null,
                     "parent": "b",
@@ -203,7 +203,7 @@
             "lists": {},
             "broadcasts": {},
             "blocks": {
-                "n": {
+                "o": {
                     "opcode": "event_whenflagclicked",
                     "next": "c",
                     "parent": null,
@@ -216,8 +216,8 @@
                 },
                 "c": {
                     "opcode": "motion_glideto",
-                    "next": "o",
-                    "parent": "n",
+                    "next": "p",
+                    "parent": "o",
                     "inputs": {
                         "SECS": [
                             1,
@@ -228,14 +228,14 @@
                         ],
                         "TO": [
                             1,
-                            "p"
+                            "q"
                         ]
                     },
                     "fields": {},
                     "shadow": false,
                     "topLevel": false
                 },
-                "p": {
+                "q": {
                     "opcode": "motion_glideto_menu",
                     "next": null,
                     "parent": "c",
@@ -249,7 +249,7 @@
                     "shadow": true,
                     "topLevel": false
                 },
-                "q": {
+                "r": {
                     "opcode": "event_whenflagclicked",
                     "next": "d",
                     "parent": null,
@@ -263,7 +263,7 @@
                 "d": {
                     "opcode": "motion_glideto",
                     "next": "g",
-                    "parent": "q",
+                    "parent": "r",
                     "inputs": {
                         "SECS": [
                             1,
@@ -274,14 +274,14 @@
                         ],
                         "TO": [
                             1,
-                            "r"
+                            "s"
                         ]
                     },
                     "fields": {},
                     "shadow": false,
                     "topLevel": false
                 },
-                "r": {
+                "s": {
                     "opcode": "motion_glideto_menu",
                     "next": null,
                     "parent": "d",
@@ -295,7 +295,7 @@
                     "shadow": true,
                     "topLevel": false
                 },
-                "o": {
+                "p": {
                     "opcode": "motion_pointindirection",
                     "next": null,
                     "parent": "c",
@@ -314,7 +314,7 @@
                 },
                 "g": {
                     "opcode": "motion_gotoxy",
-                    "next": "s",
+                    "next": "h",
                     "parent": "d",
                     "inputs": {
                         "X": [
@@ -336,10 +336,41 @@
                     "shadow": false,
                     "topLevel": false
                 },
-                "s": {
+                "h": {
+                    "opcode": "motion_glidesecstoxy",
+                    "next": "t",
+                    "parent": "g",
+                    "inputs": {
+                        "SECS": [
+                            1,
+                            [
+                                4,
+                                "1"
+                            ]
+                        ],
+                        "X": [
+                            1,
+                            [
+                                4,
+                                "70"
+                            ]
+                        ],
+                        "Y": [
+                            1,
+                            [
+                                4,
+                                "0"
+                            ]
+                        ]
+                    },
+                    "fields": {},
+                    "shadow": false,
+                    "topLevel": false
+                },
+                "t": {
                     "opcode": "motion_glidesecstoxy",
                     "next": null,
-                    "parent": "g",
+                    "parent": "h",
                     "inputs": {
                         "SECS": [
                             1,
